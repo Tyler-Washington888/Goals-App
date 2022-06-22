@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { FaSignInAlt } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaUser } from "react-icons/fa";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -26,7 +26,7 @@ function Register() {
     <>
       <section className="heading">
         <h1>
-          <FaSignInAlt /> Register
+          <FaUser /> Register
         </h1>
         <p>Please create an account</p>
       </section>
@@ -53,7 +53,7 @@ function Register() {
               placeholder="Enter your email"
               onChange={onChange}
             />
-          </div>{" "}
+          </div>
           <div className="form-group">
             <input
               type="password"
@@ -61,10 +61,10 @@ function Register() {
               id="password"
               name="password"
               value={password}
-              placeholder="Enter your password"
+              placeholder="Enter password"
               onChange={onChange}
             />
-          </div>{" "}
+          </div>
           <div className="form-group">
             <input
               type="password"

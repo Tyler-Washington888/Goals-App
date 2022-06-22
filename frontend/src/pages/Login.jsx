@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { FaUser } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaSignInAlt } from "react-icons/fa";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -24,7 +24,7 @@ function Login() {
     <>
       <section className="heading">
         <h1>
-          <FaUser /> Login
+          <FaSignInAlt /> Login
         </h1>
         <p>Login and start setting goals</p>
       </section>
@@ -40,7 +40,7 @@ function Login() {
               placeholder="Enter your email"
               onChange={onChange}
             />
-          </div>{" "}
+          </div>
           <div className="form-group">
             <input
               type="password"
@@ -48,7 +48,7 @@ function Login() {
               id="password"
               name="password"
               value={password}
-              placeholder="Enter your password"
+              placeholder="Enter password"
               onChange={onChange}
             />
           </div>
