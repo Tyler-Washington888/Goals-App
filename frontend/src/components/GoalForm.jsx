@@ -19,12 +19,13 @@ function GoalForm() {
     <section className="form">
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="text">Goal</label>
+          <label htmlFor="text"></label>
           <input
             type="text"
             name="text"
             id="text"
             value={text}
+            placeholder="Enter new goal"
             onChange={(e) => setText(e.target.value)}
           />
         </div>
